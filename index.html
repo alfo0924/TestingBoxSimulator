@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestingBoxSimulator - 測試方法模擬器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>測試方法模擬器 - 販賣機體驗</h1>
+    <div class="vending-machine">
+        <div class="display">
+            <div id="coin-slot">投幣口</div>
+            <div id="drink-output">飲料出口</div>
+        </div>
+        <div class="controls">
+            <button id="insert-coin">投入硬幣</button>
+            <button id="select-drink">選擇飲料</button>
+        </div>
+    </div>
+
+    <div class="test-mode-selector">
+        <h2>選擇測試模式</h2>
+        <div class="mode-buttons">
+            <button class="mode-btn active" data-mode="black">黑盒測試</button>
+            <button class="mode-btn" data-mode="white">白盒測試</button>
+            <button class="mode-btn" data-mode="gray">灰盒測試</button>
+        </div>
+    </div>
+
+    <div class="description">
+        <h2>測試結果與說明</h2>
+        <div id="result">請選擇測試模式並開始互動</div>
+        <div id="explanation">
+            <h3>黑盒測試</h3>
+            <p>你不知道販賣機內部怎麼運作，只管投入硬幣、按按鈕，看是否吐出正確的飲料。這就像測試者不了解軟體內部結構，只看功能是否符合預期，適合整合與系統測試。</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
